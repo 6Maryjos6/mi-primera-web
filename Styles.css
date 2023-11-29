@@ -160,6 +160,9 @@ footer div a {
     #check:checked ~ .checkbtn {
         color: rgb(255, 51, 0);
     }
+    .redes{
+        flex-wrap: wrap;
+    }
 }
 
 /*fin de la seccion responsive*/
