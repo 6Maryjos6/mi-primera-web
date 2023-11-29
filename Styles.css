@@ -76,7 +76,7 @@ footer {
     display: flex;
     background-color: rgb(225, 225, 237);
     padding: 0.4em;
-    border-radius: 10px 100px / 120px;
+    border-radius: 5px;
     align-items: center;
     justify-content: space-around;
 }
