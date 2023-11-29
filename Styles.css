@@ -1,6 +1,6 @@
 header {
     display: flex;
-    background-color: aquamarine;
+    background-color: #f0f0f0;
     border-radius: 10px 100px / 120px;
     align-items: center;
     justify-content: space-between;
