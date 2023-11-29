@@ -29,8 +29,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="acerca">
       <div class="foto-container">
+        <h1>Acerca de nosotros</h1>
         <div class="foto-mi-amor">
           <img src="Img/Maribel.jpg" alt="mi amor" />
           <p class="descripcion-foto-maribel">
@@ -41,29 +42,48 @@
       </div>
     </main>
 
-    <footer>
-      <div class="redes">
-        <div>
+    <footer id="contactos">
+        </label>
+      </div>
+      <ul class="redes">
+        <li>
           <a href="https://discord.com/" target="_blank"
             ><i class="fa-brands fa-discord"></i> Discord</a
           >
-        </div>
-        <div>
+        </li>
+        <li>
           <a href="https://twitter.com/" target="_blank"
             ><i class="fa-brands fa-x-twitter"></i> Twitter</a
           >
-        </div>
-        <div>
+        </li>
+        <li>
           <a href="https://facebook.com/" target="_blank"
             ><i class="fa-brands fa-facebook"></i> Facebook</a
           >
-        </div>
-        <div>
+        </li>
+        <li>
           <a href="https://instagram.com" target="_blank"
             ><i class="fa-brands fa-instagram"></i> Instagram</a
           >
-        </div>
-      </div>
+        </li>
+      </ul>
     </footer>
+    <div class="form-continer">
+      <h2>Formulario de contacto</h2>
+      <form id="formulario">
+        
+        <label for="Nombre"> Nombre </label>
+        <input type="text" id="nombre" name="Nombre" required>
+
+        <label for="Correo"> Correo </label>
+        <input type="text" id="correo" name="Correo" required>
+
+        <label for="mensaje"> Mensaje </label>
+        <textarea name="Mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+
+        <button type="button" onclick="enviarformulario()">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

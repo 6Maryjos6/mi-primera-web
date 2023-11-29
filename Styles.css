@@ -1,9 +1,10 @@
 header {
     display: flex;
     background-color: #f0f0f0;
-    border-radius: 10px 100px / 120px;
+    border-radius: 5px;
     align-items: center;
     justify-content: space-between;
+    margin: 0.4em;
 }
 
 ul,
@@ -32,7 +33,7 @@ header nav ul {
 /*fin de la seccion de encabezado*/
 
 body {
-    margin: 1px;
+    margin: 0.4em;
     padding: 0;
     background-image: url(Img/nebulosa_7680x4320_xtrafondos.com.jpg);
     background-size: cover;
@@ -54,16 +55,16 @@ main {
 }
 
 .foto-container {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 5em;
     padding: 15px;
     margin: 2px;
-    
+
 
 }
-.descripcion-foto-maribel{
+
+.descripcion-foto-maribel {
     display: flex;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -82,25 +83,73 @@ main div img {
 /*fin de la seccion de main*/
 footer {
     display: flex;
-    background-color: rgb(225, 225, 237);
-    padding: 0.4em;
+    justify-content: center;
+    background-color: aqua;
     border-radius: 5px;
-    align-items: center;
-    justify-content: space-around;
+    font-size: 20px;
+    margin: 0.4em;
 }
 
-footer div {
+
+.redes {
+    list-style: none;
     display: flex;
-    gap: 5em;
+    flex-wrap: wrap;
+    gap: 10em;
+
 
 }
 
-footer div a {
-    color: blue;
+.redes li {
+    margin: 10px;
+
+
+}
+
+.redes li a {
     text-decoration: none;
 }
+.form-continer{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+}
 /*fin de la seccion de footer*/
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label{
+    margin-bottom: 8px;
+}
+input, textarea{
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0bc10b;
+    }
+
+/*fin de la seccion del form*/
+
 
 #check {
     display: none;
@@ -116,15 +165,8 @@ footer div a {
     display: none;
 }
 
-/*fin de la seccion del menu*/
 
-@media(max-width:900px) {
-    main div img {
-        flex-wrap: wrap;
-        width: 85%;
-        height: 85%;
-    }
-}
+/*fin de la seccion del menu*/
 
 @media(max-width:760px) {
     main div img {
@@ -142,15 +184,14 @@ footer div a {
         width: 100%;
         height: 100vh;
         background-color: rgb(72, 64, 224);
-        text-align:center;
+        text-align: center;
 
         top: 65px;
         left: 100%;
         transition: all 1s
-
     }
 
-    #check:checked ~ ul {
+    #check:checked~ul {
         left: 0%;
         display: block;
     }
@@ -161,16 +202,34 @@ footer div a {
         line-height: 30px;
 
     }
+
     #encabezado nav ul li a {
         font-size: 20px;
         color: white;
     }
-    #check:checked ~ .checkbtn {
+
+    #check:checked~.checkbtn {
         color: rgb(255, 51, 0);
     }
-    .redes{
+
+    .redes {
         flex-wrap: wrap;
     }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .redes {
+        margin: 10px;
+    }
+
+    .redes {
+        margin-top: 0;
+        text-align: center;
+    }
+
+
 }
 
 /*fin de la seccion responsive*/
